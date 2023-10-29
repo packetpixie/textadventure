@@ -1,0 +1,144 @@
+In this game, you play a master hacker, who is capable of doing anything.
+Tell me, where do you keep your secret tools for emergencies? [1||2]
+
+1. In the old silver locket tucked under your shirt; there is a microSD card nestled behind a photo of someone.
+2. In an imperceptively carved slot in the sole of your shoe.
+
+You wake up on the cold floor of an empty, windowless cell.
+Your head hurts. Bad.
+In the corner, there's an ancient-looking laptop. It's about an inch thick, and whirring violently.
+There's a note on it.
+
+Read the note? [1] for yes or [2] for no:
+
+***
+
+1. Read note:
+
+Note:
+"No wifi access, obviously. I put some movies on here so you'd have something to do. Behave - you don't want to mess up what you've got going here. Trust me. -The Good Cop"
+
+You are [1||2]:
+> Disgusted
+> Appalled
+
+1:
+>What kind of person could *kidnap someone and still think they're good?
+2:
+>You check the laptop. How could they leave a *human being* with nothing but *Nicolas Cage* movies??
+
+You realize you're dealing with true monsters.
+
+2. Don't read note:
+
+You don't have to listen to POS who decided to kidnap you.
+You crumple the note up and toss it aside.
+
+***
+
+It's time to get the fuck out of here.
+
+A grin breaks out over your face. 
+>"Good thing they let me keep my shoes,"
+>"Good thing they let me keep my locket,"
+
+When you're ready, press 1 to load in the microSD card and start hacking your way out: 
+
+Please note that the following game is purely for fun and educational purposes. This game does not condone using the skills you will learn in this game to hurt people, violate privacy, or break the law.
+
+***
+
+CHALLENGE 1: RECON
+In this challenge, you need to explore the network. Find what devices are available on the local network, so that you can see what's available for you to hack.
+
+
+
+***
+PLANNING:
+
+Chapter 1: Connect to the local network
+Networking and Subnetting
+
+1. Connect to the Local Network
+   - Use the `ifconfig` or `ipconfig` command to view network interfaces and their configurations.
+   - Use the `iwconfig` command to enable Wi-Fi and connect to the local network.
+   
+   There are a few ways to find out the SSID and key for a wireless network. You remember your mentor telling you, that you would be shocked how often people leave the default username and password on their router.
+
+    Check the Router's Web Interface: You can access the router's web interface by typing its IP address into a web browser. The SSID and key are usually found in the wireless settings section. The default IP address for most routers is 192.168.1.1 or 192.168.0.1, and the default username and password are often "admin."
+    
+your jaw drops when the wifi connection turns green. "no fucking way." You really were shocked by how common that was.
+   
+   - Use the `nmap` tool to scan the local network and identify connected devices and their IP addresses.
+
+2. Find the Security Camera's IP and Take Control of It
+   - Use the `nmap` tool to perform a more detailed scan of the network, focusing on the IP address range identified in the previous step.
+   - Use the Metasploit framework to search for known vulnerabilities in the camera's firmware and exploit them to gain access to the camera's control interface.
+   - Use the camera's control interface to manipulate the camera's view or settings as needed.
+
+3. Crack the Keypad's Passcode
+   - Use the security camera to observe the guard entering the passcode on the keypad.
+   - Memorize or record the passcode.
+   - Enter the passcode on the keypad to unlock the door and escape.
+
+**Chapter 2: Hacking a Security Camera/Webcam**
+
+1. Locate the Target Camera
+   - Use tools like `nmap` and `Wireshark` to locate the target camera on the network.
+   - Identify the camera's IP address and other relevant information that can be used in the next step.
+
+2. Exploit Vulnerabilities
+   - Use the Metasploit framework to search for known vulnerabilities in the camera's software and exploit them to gain access.
+   - Alternatively, use social engineering tactics to trick someone into giving you access to the camera.
+
+3. Gain Control and Extract Information
+   - Use the camera's control interface to manipulate its settings and view its feed.
+   - Extract any relevant information from the camera's feed or stored data.
+
+**Chapter 3: Wi-Fi Sniffing and Cracking Passwords with Hash Tables over WPA**
+
+1. Wi-Fi Sniffing
+   - Use the `aircrack-ng` suite of tools to capture packets on the Wi-Fi network.
+   - Identify the target Wi-Fi network and capture packets while a device connects to it to obtain the WPA handshake.
+
+2. Extracting the Handshake
+   - Use `Wireshark` or a similar tool to analyze the captured packets and extract the WPA handshake.
+   - Save the handshake file for use in the next step.
+
+3. Cracking the Password with Hash Tables
+   - Use the `hashcat` tool and a precomputed hash table to crack the Wi-Fi password from the WPA handshake.
+   - Use the cracked password to connect to the Wi-Fi network and gain access.
+   
+***
+DETAILED PLANNING: CHAPTER 1:
+
+An IP address is a unique identifying number that's given to every device that wants to connect to the network, like a student ID number that schools give out to every student. This way, your device can always be uniquely identified. After all, if you're sending a dick pic to "Sara's iPhone", you only want that picture to go to one Sara's iPhone in particular. You wouldn't want to send that picture to some random, unsuspecting Sara who isn't expecting it - who would want to do something like that on the internet?? That's why we have IP addresses, to protect you and your penis from same-name confusion.
+
+An IP address, at least in IPv4 format, looks like this: XXXX.XXXX.XXXX.XXXX, where each XXXX represents a 4-bit number, and each number is separated by a period. 4 bits gives us a range of 0-255, so each of the four numbers can be any number between 0-255. For example:
+
+> 126.0.0.1
+> 126.0.0.2
+> 255.255.255.255
+> 10.72.125.14
+
+With this system/range of numbers, there are about 4.2 billion unique IP addresses.
+
+However, there are way more than 4.2 billion devices that want access to the internet. So, how do we uniquely identify everyone?
+
+For that, we use something called LAN: Local Area/Access(?) Networks. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
