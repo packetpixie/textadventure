@@ -23,17 +23,21 @@ def get_user_choice():
 
 # Error checking for user input   
 def get_user_input(prompt, valid_inputs):
-    user_input = input(prompt)
-    while user_input not in valid_inputs:
-        user_input = input(f"Input must be one of {valid_inputs}: ")
-    return user_input
+    while True:
+        try:
+            user_input = input(prompt)
+            if user_input not in valid_inputs:
+                raise ValueError("Input must be 1 or 2. Please try again.")
+            return user_input
+        except ValueError as ve:
+            print(ve)
 
 # Enables text scroll output animation
 def scrollout(input_string):
     for char in input_string:
         sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(0.01)  # You can adjust the delay here
+        time.sleep(0.03)  # You can adjust the delay here
     print()
 
 # Player chooses to read or ignore the note on the laptop
