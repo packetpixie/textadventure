@@ -1,5 +1,6 @@
 import sys
 import time
+import os
 from enum import Enum
 
 # To keep track of user's choices
@@ -11,9 +12,12 @@ class Choice(Enum):
     DISGUSTED = 5
     APPALLED = 6
     READY = 7
+    
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
-# Obtains user's choice
-def get_user_choice():
+# Obtains user's choice for scene_0
+def scene_0_choice():
     choices = {
         "1": Choice.LOCKET,
         "2": Choice.SHOE,
@@ -67,12 +71,12 @@ def scene_3_choice():
     return choices[get_user_input(prompt, choices.keys())]
 
 # Begins game
-def intro_scene():
-    display_intro()
-    return get_user_choice()
+def scene_0():
+    display_scene_0()
+    return scene_0_choice()
 
 # Displays intro scene to player
-def display_intro():
+def display_scene_0():
     scrollout("In this game, you play a master hacker, who is capable of doing anything.")
     scrollout("Tell me, where do you keep your secret tools for emergencies? [1||2]: ")
     print()
@@ -139,10 +143,15 @@ def scene_2(emergencytools):
     print()
     scrollout("When you're ready, press 1 to load in the microSD card and start hacking.")
     scene_3_choice()
+    scene_3()
+    
+def scene_3():
+	clear()
+	print("it worked!")
 
 # Main function, starts program
 if __name__ == "__main__":
-    start = intro_scene()
+    start = scene_0()
     if start:
         scene_1(start)
 
