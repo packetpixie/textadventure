@@ -138,7 +138,7 @@ def scene_2(emergencytools):
     else:
         scrollout("\"Good thing they let me keep my shoes,\"")
         print()
-        scrollout("You reach down, your fingers deftly fishing through your shoe, and pull out your microSD card.")
+        scrollout("You reach down, your fingers deftly fishing through your shoe to that little hidden crack of rubber, and pull out your microSD card.")
     scrollout("With this and the computer, you have everything you need.")
     print()
     scrollout("When you're ready, press 1 to load in the microSD card and start hacking.")

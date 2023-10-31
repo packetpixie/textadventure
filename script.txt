@@ -129,11 +129,36 @@ For that, we use something called LAN: Local Area/Access(?) Networks.
 
 
 
+HMM i'm just not sure what kind of hack to implement. sure wish i knew more about hacking. lol.
+
+OOH FUCK THE SECURITY CAMERA - LET'S SAY YOU JUST HAVE TO DISABLE THE DOOR ALARM! FOR THAT YOU CAN USE A DEAUTH ATTACK OR SOMETHING
+
+
+
+FOR THE KEYPAD HACK:
+
+you go over to the keypad, and can decide whether to look for screws/a screwdriver or to just smash it. ultimately, you will find that there is nothing in the room, and you have to just smash it. once smashed, you find the internal wiring that connects the keypad buttons to the internal computer/microcontroller, for simplicity's sake we'll just say that it just miraculously happens to be a usb connector. good thing this old laptop of yours has so many ports! you plug the keypad into your laptop, and now all you have to do is enter the correct password. of course, you don't actually know the password.
+
+at this point, you can use john the ripper to crack the password. once cracked, the door opens.
+
+
+it would be cool to make a hard mode version of the game where there is no walkthrough, yuo're just in a vm terminal and have to hack your way out on your own with minimal instructions/more freedom. but i just don't have the skills for that yet
+
+
+
+ok so: first use the security camera to do a deauth attack and sniff the wifi handshake. hack the wifi password from that so that you can get onto the nework.
+
+turns out the network is subnetted/firewalled, but you discover two more devices: a door alarm, and a keypad that locks the door.
+
+next step is to disable the door alarm. no idea how to do this yet but we'll figure it out.
+
+after that, travel through the network or somehow ssh or otherwise tunnel/connect to the keypad. from here, do one last password hack to find the keypad code. then, just enter the code, and open the door.
 
 
 
 
 
+from here, you run out the door to find an elevator. you get in the elevator, but it breaks down with you inside it. can you hack your way out of the elevator before they find out you're gone?? duh duh DUHHHH (this will be part 2)
 
 
 
