@@ -121,7 +121,7 @@ def read_note():
     if choice == Choice.DISGUSTED:
         scrollout("What kind of person could *kidnap* someone and still think they're good?")
     else:
-        scrollout("How could they leave a *human being* with nothing but *Nicolas Cage* movies??")
+        scrollout("You check the laptop- How could they leave a *human being* with nothing but *Nicolas Cage* movies??")
     scrollout("You realize you're dealing with true monsters.")
 
 # Displays scene 2 to player
@@ -132,7 +132,7 @@ def scene_2(emergencytools):
     scrollout("A grin breaks out over your face.")
 
     if emergencytools == Choice.LOCKET:
-        scrollout("\"Good thing they let me keep my locket,\"")
+        scrollout("\"Good thing they let me keep my jewelery,\"")
         print()
         scrollout("You reach to your heart, your fist wrapping around the locket there for a moment before you open it, and pull out a microSD card.")
     else:
